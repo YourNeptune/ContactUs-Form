@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.container::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+    background: url("images/pineapple.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(8px);
+}
+
+.container2{
+    position: relative;
+    background-color: #faf9f9;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 18px 5px rgb(165, 165, 165);
+
+}
+
+.left{
+    height: 100%;
+   
+}
+.right{
+    height: 100%;
+
+}
+.left img{
+    width: 100%;
+    height: 100%
+}
+.form{
+    padding: 0px 30px;
+}
+
+.form h3{
+   font-size: 1.5rem;
+   padding: 30px 0px 10px;
+   color: #000;
+}
+
+.field{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 30px 0px;
+    font-size: 0.8rem;
+    border: 2px solid #f0f0f0;
+    background-color: #faf9f9;
+    border-radius: 4px;
+}
+.field:hover{
+    border: 2px solid #ffd868;
+}
+.field:focus{
+    background-color: #f9f3de;
+}
+
+
+button{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #ffd868;
+    border: 2px solid #ffd868;
+    color: #fff;
+    font-size: 1.2rem;
+
+}
+button:hover{
+    background-color: #f9bf13;
+    border: 2px solid #f9bf13;
+}
+
+@media screen and (max-width: 750px){
+
+    .container{
+        padding: 300px 0px 600px;
+    }
+    .container2{
+        padding-bottom: 20px;
+        margin: 350px 0px 100px;
+        grid-template-columns: 350px;
+    }
+    .left{
+        height:200px;
+        
+    }
+    .footer{
+        margin-left: -60px;
+        margin-top: -20px;
+    }
+}
+
+.footer{
+    position: absolute;
+    top: 95%;
+    left: 44%;
+    font-size: 11px;
+    color: #fff;
+}
